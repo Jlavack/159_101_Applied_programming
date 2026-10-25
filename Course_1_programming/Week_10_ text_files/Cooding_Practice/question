@@ -1,0 +1,25 @@
+
+//1. load words into array
+    number = 0;
+    i=0;
+    string words[100];
+    while (getline(datafile, line)) {
+      number ++;
+    }
+
+//2. load into array
+    string words[number];
+    for (i=0; getline(datafile, line); i++) {
+    words[i] = line;
+    }
+
+//3. concatenate suffix
+    for (i=0; i < number; i++) {
+      words[i] = words[i] + "ing";
+    }
+
+
+//4. write into file two;
+  //  for (i=0; i < number; i++) {
+  //    filetwo << words[i] << endl;
+  //  }
